@@ -20,8 +20,6 @@ diffusion_slt/
 ├── train.py              # Training loops and loss functions
 ├── experiments.py        # Three main experiments from the paper
 ├── visualize_results.py  # Result visualization and analysis
-├── run_experiments.sh    # Run all experiments
-├── run_single_comparison.sh  # Quick comparison script
 ├── requirements.txt      # Python dependencies
 └── README.md            # This file
 ```
