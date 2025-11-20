@@ -42,27 +42,7 @@ python -c "import torch; print(f'CUDA available: {torch.cuda.is_available()}'); 
 
 ## Running Experiments
 
-### Quick Start: Single Comparison
-
-For a fast validation on your L40 cluster:
-
-```bash
-chmod +x run_single_comparison.sh
-./run_single_comparison.sh mnist 20 5000 42
-```
-
-This trains both models for 20 epochs on 5000 MNIST samples. Results are saved to `checkpoints/`.
-
-### Full Experimental Suite
-
-To run all three experiments from the paper:
-
-```bash
-chmod +x run_experiments.sh
-./run_experiments.sh
-```
-
-This will:
+This will run:
 1. **Experiment 1**: Sample complexity curves (tests Theorem 3)
 2. **Experiment 2**: Variance estimation via bootstrapping (tests Proposition 1)
 3. **Experiment 3**: Bias estimation (tests Proposition 2)
