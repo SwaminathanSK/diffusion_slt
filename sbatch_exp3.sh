@@ -6,13 +6,13 @@
 #SBATCH --cpus-per-task=4
 #SBATCH --gres=gpu:1
 #SBATCH --mem=16G
-#SBATCH --time=30:00:00
+#SBATCH --time=6:00:00
 #SBATCH --output=logs/exp3_%j.out
 #SBATCH --error=logs/exp3_%j.err
 
 # Experiment 3: Bias Estimation
 # Tests Proposition 2: Bias_epsilon ≈ Bias_x
-# Trains models to convergence on full dataset (100 epochs, 10 runs each)
+# Trains models to convergence on full dataset (50 epochs, 5 runs each)
 
 echo "=========================================="
 echo "EXPERIMENT 3: Bias Estimation"

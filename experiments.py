@@ -231,8 +231,8 @@ def experiment2_variance_estimation(
 def experiment3_bias_estimation(
     dataset='mnist',
     subset_size=50000,
-    epochs=100,
-    num_runs=10,
+    epochs=50,
+    num_runs=5,
     save_dir='./results/exp3',
     device='cuda'
 ):
@@ -247,8 +247,8 @@ def experiment3_bias_estimation(
     Args:
         dataset: 'mnist' or 'cifar10'
         subset_size: Size of training subset (or full dataset)
-        epochs: Number of epochs per training run
-        num_runs: Number of training runs to average over
+        epochs: Number of epochs per training run (default: 50 for faster convergence)
+        num_runs: Number of training runs to average over (default: 5, sufficient for bias estimation)
         save_dir: Directory to save results
         device: 'cuda' or 'cpu'
     """

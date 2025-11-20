@@ -37,7 +37,7 @@ echo "Submitting Experiment 3 (Bias Estimation)..."
 JOB3=$(sbatch --export=DATASET=$DATASET sbatch_exp3.sh | awk '{print $4}')
 echo "  Job ID: $JOB3"
 echo "  Partition: gpu_l40"
-echo "  Expected runtime: ~20-24 hours (100 epochs, 10 runs)"
+echo "  Expected runtime: ~2-3 hours (50 epochs, 5 runs)"
 echo ""
 
 echo "=========================================="
