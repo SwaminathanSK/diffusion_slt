@@ -1,0 +1,7 @@
+{
+  "num_models": 20,
+  "subset_size": 10000,
+  "variance_noise": 0.01303200051188469,
+  "variance_direct": 0.05128825455904007,
+  "variance_ratio": 3.9355626106262207
+}

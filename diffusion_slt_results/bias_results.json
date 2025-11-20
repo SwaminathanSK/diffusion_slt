@@ -1,0 +1,8 @@
+{
+  "num_runs": 5,
+  "subset_size": 50000,
+  "epochs": 50,
+  "bias_squared_noise": 0.010208891704678535,
+  "bias_squared_direct": 0.0981750562787056,
+  "bias_ratio": 9.616621971130371
+}
