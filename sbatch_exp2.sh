@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH --job-name=diffusion_exp2
-#SBATCH --partition=gpu_24hour
+#SBATCH --partition=gpu_l40
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=4

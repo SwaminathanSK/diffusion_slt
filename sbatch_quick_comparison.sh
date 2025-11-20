@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH --job-name=diffusion_quick
-#SBATCH --partition=gpu_1hour
+#SBATCH --partition=gpu_l40
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=2

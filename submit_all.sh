@@ -20,7 +20,7 @@ echo ""
 echo "Submitting Experiment 1 (Sample Complexity)..."
 JOB1=$(sbatch --export=DATASET=$DATASET sbatch_exp1.sh | awk '{print $4}')
 echo "  Job ID: $JOB1"
-echo "  Partition: gpu_24hour"
+echo "  Partition: gpu_l40"
 echo "  Expected runtime: ~6-10 hours"
 echo ""
 
@@ -28,7 +28,7 @@ echo ""
 echo "Submitting Experiment 2 (Variance Estimation)..."
 JOB2=$(sbatch --export=DATASET=$DATASET sbatch_exp2.sh | awk '{print $4}')
 echo "  Job ID: $JOB2"
-echo "  Partition: gpu_24hour"
+echo "  Partition: gpu_l40"
 echo "  Expected runtime: ~12-16 hours (trains 20 models)"
 echo ""
 
@@ -36,7 +36,7 @@ echo ""
 echo "Submitting Experiment 3 (Bias Estimation)..."
 JOB3=$(sbatch --export=DATASET=$DATASET sbatch_exp3.sh | awk '{print $4}')
 echo "  Job ID: $JOB3"
-echo "  Partition: gpu_48hour"
+echo "  Partition: gpu_l40"
 echo "  Expected runtime: ~20-24 hours (100 epochs, 10 runs)"
 echo ""
 
